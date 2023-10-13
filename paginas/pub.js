@@ -1,10 +1,10 @@
 /* Crear un algoritmo creando un ciclo aplicado a pagina de publicaciones 
 y noticias para despues traer estas noticias desde una api */
 
-const img_pub = ["../assets/imagenes/Kcmuv_Servicios-02-700.webp", "../assets/imagenes/credito-bancario-o-infonavit.webp", "../assets/imagenes/impi.webp"]
-const title_pub = ["IMSS INFONAVIT", "CREDITOS", "IMPI",]
-const desc_pub = ["Nueva Autoridad Respecto a el Cumplimiento Normativo la Dirección de Registro de Prestadoras de Servicios Especializados (REPSE)", "¿Debo presentar mi declaración anual como persona física? Excepciones a la obligación de presentar tu declaración anual para Persona Física en 2023", "Marcas, avisos o nombres comerciales concedidos en el año 2020 deben declarar su uso durante 2023"]
-const time_pub = ["5", "15", "30"]
+const img_pub = ["../assets/imagenes/Kcmuv_Servicios-02-700.webp", "../assets/imagenes/credito-bancario-o-infonavit.webp", "../assets/imagenes/impi.webp","../assets/imagenes/transportistas-anotando-datos-frente-a-un-camion.webp"]
+const title_pub = ["IMSS INFONAVIT", "CREDITOS", "IMPI","Transporte e Hidrocarburos"]
+const desc_pub = ["Nueva Autoridad Respecto a el Cumplimiento Normativo la Dirección de Registro de Prestadoras de Servicios Especializados (REPSE)", "¿Debo presentar mi declaración anual como persona física? Excepciones a la obligación de presentar tu declaración anual para Persona Física en 2023", "Marcas, avisos o nombres comerciales concedidos en el año 2020 deben declarar su uso durante 2023","Nuevas Prorrogas que establece el SAT en el cumplimiento de Obligaciones ¿Afectan o benefician a los empresarios de los Sectores de Transporte e Hidrocarburos?"]
+const time_pub = ["5", "15", "30","40"]
 
 const inputBusqueda = document.getElementById("busqueda");
 const botonBuscar = document.getElementById("boton-buscar");
