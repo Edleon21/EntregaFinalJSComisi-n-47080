@@ -526,7 +526,7 @@ button:hover::before {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5.5px);
   border-radius: 16px;
-  padding: 5% 5%;
+  padding: 1% 5%;
 }
 
 .items-text01 {
@@ -537,6 +537,7 @@ button:hover::before {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.56px;
+  margin-top: 1rem;
 }
 
 .items-text02 {
@@ -550,6 +551,13 @@ button:hover::before {
   background-color: #fff;
   width: 100%;
   height: 3px;
+}
+
+.img-servicios {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
 }
 
 .grid-contacto {
