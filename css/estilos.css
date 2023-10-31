@@ -156,7 +156,7 @@ ul li a::after {
 
 /*------Fuentes-------*/
 /*extend*/
-.font-textos01, .items-text02, .texto-descripcion01, .grid-conteiner, .edit-text03, .edit-text02, .edit-text01, h4, .font-secund, nav ul li a {
+.font-textos01, .items-text02, .texto-descripcion01, .grid-conteiner, .texto-sesion, .edit-text03, .edit-text02, .edit-text01, h4, .font-secund, nav ul li a {
   font-family: "Mulish-regular";
   color: #fff;
 }
@@ -289,41 +289,107 @@ button:hover::before {
   text-align: center;
 }
 
-.container-icon {
-  display: flex;
+.wrapper {
+  display: inline-flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 0% 50% 0% 24%;
-  gap: 20px;
+  list-style: none;
+  padding: 0% 6% 0% 0%;
+  font-family: "Poppins", sans-serif;
 }
 
-.container-icon div {
-  border: none;
-  transition: 0.3s;
-  cursor: pointer;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-.icon {
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.container-icon div:nth-child(1):hover {
-  background-color: #0DC143;
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.container-icon div:nth-child(2):hover {
-  background-color: #4267B2;
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.container-icon div:nth-child(3):hover {
-  background: #0077B5;
+.wrapper .icon:hover .tooltip {
+  top: -35px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #fff;
+}
+
+.texto-sesion {
+  text-decoration: none;
+  color: #87E7AD;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  height: 85px;
+  padding: 27px 0px;
+  cursor: pointer;
+}
+
+.img-login {
+  width: 42px;
+  height: 42px;
+  padding: 2%;
 }
 
 .login {
@@ -407,7 +473,7 @@ button:hover::before {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 5% 10% 0% 0%;
+  padding: 0% 10% 0% 0%;
 }
 
 .flex-conteiner2 section {
