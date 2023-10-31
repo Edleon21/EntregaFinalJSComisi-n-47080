@@ -296,7 +296,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10% 20%;
+    padding: 5% 20%;
 }
 .contenedor-login {
     display: grid;
@@ -327,6 +327,12 @@ button {
     height: 40%;
     transform: translate(-50%, -50%);
     font-family: $font-principal;
+}
+.font-registro{
+    color: $color-primario-fuente;
+    @include texto-descripciones(40px,normal,500,0);
+    padding: 2%;
+    text-align: center;
 }
 //Pagina Publicaciones
 .container-pub1 {
@@ -536,6 +542,7 @@ button {
     color: $color-primario-fuente;
     @include texto-descripciones(20px,normal,500,0);
 }
+
 .boton-imput{
     border-style: none;
     font-family: $font-secundaria;

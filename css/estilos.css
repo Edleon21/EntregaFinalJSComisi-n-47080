@@ -331,7 +331,7 @@ button:hover::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10% 20%;
+  padding: 5% 20%;
 }
 
 .contenedor-login {
@@ -363,6 +363,16 @@ button:hover::before {
   height: 40%;
   transform: translate(-50%, -50%);
   font-family: "Philosopher-bold";
+}
+
+.font-registro {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 2%;
+  text-align: center;
 }
 
 .container-pub1 {
